@@ -146,13 +146,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        customField {
-          name
-          values {
-            name
-            priceChange
-          }   
-        }
       }
     }
   }
