@@ -77,9 +77,9 @@ class Item extends React.Component {
   }
 
    // calculate price based on option selected for display on item page
-  updatePrice = (basePrice, values) => {
-    const selectedOption = values.find(option => option.name === this.state.selected)
-    return (basePrice + selectedOption.priceChange).toFixed(2)
+  updatePrice = (basePrice) => {
+    
+    return (basePrice  ).toFixed(2)
     
   }
 
@@ -94,7 +94,7 @@ class Item extends React.Component {
 
         <ImgStyled fluid={item.frontmatter.image.childImageSharp.fluid} />
 
-        <Price>UAH {this.updatePrice(item.frontmatter.price, item.frontmatter.customField.values)}</Price>
+        <Price>UAH {this.updatePrice(item.frontmatter.price)}</Price>
         <Description>{item.frontmatter.description}</Description>
          
 
@@ -106,9 +106,8 @@ class Item extends React.Component {
           data-item-description={item.frontmatter.description}
           data-item-image={item.frontmatter.image.childImageSharp.fluid.src}
           data-item-url={"https://gatsby-snipcart-starter.netlify.com" + item.fields.slug} //REPLACE WITH OWN URL
-          data-item-custom1-name={item.frontmatter.customField ? item.frontmatter.customField.name : null}
-          data-item-custom1-options={this.createString(item.frontmatter.customField.values)}
-          data-item-custom1-value={this.state.selected}>
+          
+           >
           Add to basket
         </BuyButton>
         </div>
@@ -144,6 +143,7 @@ export const pageQuery = graphql`
             }
           }
         }
+         
       }
     }
   }
