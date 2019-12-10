@@ -4,14 +4,12 @@ path: test
 date: 2019-12-10T02:26:51.125Z
 title: test
 image: ./image1.jpg
-id: '22'
-price: '22'
+id: 22
+price: 22
 description: test
-customField:
-  name: asd
-  values:
-    name: name
-    priceChange: 123
+customField: 
+    name: Pack Size
+    values: [{name: 'One Cake', priceChange: 0}, {name: 'Pack of 6', priceChange: 9.50}, {name: 'Pack of 12', priceChange: 20.00}]
 ---
 sad 
 

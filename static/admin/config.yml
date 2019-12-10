@@ -18,7 +18,7 @@ collections:
       - { name: date, label: Date,  widget: datetime, format: "MM/DD/YYYY" }
       - { name: title, label: Title }
       - { name: image, label: image, default: ./image1.jpg }
-      - { name: id, label: ID, widget: number }
+      - { name: id, label: ID }
       - { name: price, label: price, widget: number }
       - { name: description, label: description }
       - { label: customField, name: customField, widget: object, fields: [{  name: name, label: name }, 

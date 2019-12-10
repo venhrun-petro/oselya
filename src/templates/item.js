@@ -100,12 +100,7 @@ class Item extends React.Component {
 
         <Price>UAH {this.updatePrice(item.frontmatter.price, item.frontmatter.customField.values)}</Price>
         <Description>{item.frontmatter.description}</Description>
-        <Dropdown
-          id={item.frontmatter.customField.name}
-          onChange={(e) => this.setSelected(e.target.value)}
-          value={this.state.selected}>
-          {item.frontmatter.customField.values.map((option) => (<DropdownOption key={option.name}>{option.name}</DropdownOption>))}
-        </Dropdown>
+         
 
         <BuyButton
           className='snipcart-add-item'
