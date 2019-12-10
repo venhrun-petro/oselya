@@ -2,7 +2,7 @@
 path: ad
 date: 12/10/2019
 title: new
-image: /src/images/roell.png
+image: ./image1.jpg
 id: 24
 price: 32
 description: new
