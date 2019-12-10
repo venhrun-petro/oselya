@@ -68,9 +68,7 @@ class Item extends React.Component {
     selected: this.props.data.markdownRemark.frontmatter.customField.values[0].name
   }
 
-  setSelected = (value) => {
-    this.setState({ selected: value })
-  }
+   
 
   // create the string required by snipcart to allow price changes based on option chosen
   createString = (values) => {
