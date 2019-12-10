@@ -3,15 +3,17 @@ import styled, { ThemeProvider } from 'styled-components';
 import { theme } from '../styles/theme';
 import { GlobalStyle } from '../styles/globalStyle';
 import Navigation from './includes/Navigation';
-import NavigationMobile from './includes/NavigationMobile'
-
+import NavigationMobile from './includes/NavigationMobile';
+import Footer from './includes/footer';
+import Contact from './contact';
+import GoogleMaps from './googlemaps';
  
 
 
 const PageWrapper = styled.div`
   width: 100%;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   @media (max-width: 710px) {
     width: 100%;
   }
@@ -58,11 +60,9 @@ class Layout extends React.Component {
           <NavigationMobile />
             
             <MainSection>{children}</MainSection>
-            <FooterStyled>
-              <strong>Gatsby Snipcart Starter
-           - Made by <ExternalLink href="https://www.issydennis.com/" target="_blank" rel="noopener noreferrer">Issy Dennis</ExternalLink>
-              </strong>
-            </FooterStyled>
+            <Contact />
+            <GoogleMaps />
+            <Footer />
           </PageWrapper>
         </>
       </ThemeProvider>
