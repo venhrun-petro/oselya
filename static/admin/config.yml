@@ -13,15 +13,16 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden"}
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
+      - { name: date, label: Date,  widget: datetime, format: "MM/DD/YYYY" }
       - { name: title, label: Title }
-      - { name: image, label: image, widget: image}
-      - { name: id, label: ID }
-      - { name: price, label: price }
+      - { name: image, label: image, default: ./image1.jpg }
+      - { name: id, label: ID, widget: number }
+      - { name: price, label: price, widget: number }
       - { name: description, label: description }
-      - { label: customField, name: customField, widget: object, fields: [{  name: name, label: name }, {  name: priceChange, label: priceChange }]}
+      - { label: customField, name: customField, widget: object, fields: [{  name: name, label: name }, 
+        { label: values, name: values, widget: object, fields: [{name: name, label: name }, {name: priceChange, label: priceChange, widget: number }]}   ]}
       - { name: body, label: Body, widget: markdown }
 
   # - name: "pages"
