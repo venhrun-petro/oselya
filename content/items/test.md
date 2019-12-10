@@ -4,7 +4,7 @@ path: test
 date: 2019-12-10T02:26:51.125Z
 title: test
 image: ./image1.jpg
-id: '33'
+id: 33
 price: 44
 description: test
 ---
