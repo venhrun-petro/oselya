@@ -4,7 +4,7 @@ backend:
   
 
 media_folder: content/items
-public_folder: 
+public_folder: images
 
 collections:
   - name: "blog"
@@ -17,7 +17,7 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date,  widget: datetime, format: "MM/DD/YYYY" }
       - { name: title, label: Title }
-      - { name: image, label: image,  widget: image   }
+      - { name: image, label: image, default: ./image1.jpg }
       - { name: id, label: ID, widget: number, type: number }
       - { name: price, label: price, widget: number, type: number }
       - { name: description, label: description }
