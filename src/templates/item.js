@@ -64,9 +64,7 @@ const BuyButton = styled.button`
 `
 
 class Item extends React.Component {
-  state = {
-    selected: this.props.data.markdownRemark.frontmatter.customField.values[0].name
-  }
+   
 
    
 
