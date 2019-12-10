@@ -3,19 +3,25 @@ backend:
   branch: master
   
 
-media_folder: src/imgages
-public_folder: imgages
+media_folder: src/images
+public_folder: images
 
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "src/pages/blog"
+    folder: "content/items"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - { name: image, label: image, widget: image}
+      - { name: id, label: ID }
+      - { name: price, label: price }
+      - { name: description, label: description }
+      - { label: customField, name: customField, widget: object, fields: [{  name: name, label: name }, {  name: priceChange, label: priceChange }]}
       - { name: body, label: Body, widget: markdown }
 
   # - name: "pages"

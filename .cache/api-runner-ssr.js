@@ -1,23 +1,23 @@
 var plugins = [{
-      plugin: require('/home/pvenhryn/git/mag_cart-master/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      plugin: require('/home/pvenhryn/git/mag_cart-master_old/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/pvenhryn/git/mag_cart-master/node_modules/gatsby-plugin-feed/gatsby-ssr'),
+      plugin: require('/home/pvenhryn/git/mag_cart-master_old/node_modules/gatsby-plugin-feed/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/pvenhryn/git/mag_cart-master/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/home/pvenhryn/git/mag_cart-master_old/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"Gatsby Snipcart Starter","short_name":"Gatsby Snipcart","start_url":"/","background_color":"#ffffff","theme_color":"thistle","display":"minimal-ui","icon":"content/assets/gatsby-icon.png"},
     },{
-      plugin: require('/home/pvenhryn/git/mag_cart-master/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('/home/pvenhryn/git/mag_cart-master_old/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/pvenhryn/git/mag_cart-master/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/home/pvenhryn/git/mag_cart-master_old/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/pvenhryn/git/mag_cart-master/node_modules/gatsby-plugin-snipcart/gatsby-ssr'),
+      plugin: require('/home/pvenhryn/git/mag_cart-master_old/node_modules/gatsby-plugin-snipcart/gatsby-ssr'),
       options: {"plugins":[],"apiKey":"NWQ0ZDg2MzItZjUyMi00OWZlLWI4NGMtMjY3MGFmY2Q4YjU2NjM3MTE0NDQzOTg4NzQ5MjAw","autopop":true},
     },{
-      plugin: require('/home/pvenhryn/git/mag_cart-master/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('/home/pvenhryn/git/mag_cart-master_old/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

@@ -35,19 +35,19 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
     `gatsby-plugin-netlify-cms`,
     {
       resolve: 'gatsby-plugin-netlify-cms',
       // options: {
       //   modulePath: `${__dirname}/src/cms/cms.js`,
       // },
+    },
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        //trackingId: `ADD YOUR TRACKING ID HERE`,
+      },
     },
     `gatsby-plugin-feed`,
     {
