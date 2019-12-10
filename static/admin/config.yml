@@ -18,11 +18,9 @@ collections:
       - { name: date, label: Date,  widget: datetime, format: "MM/DD/YYYY" }
       - { name: title, label: Title }
       - { name: image, label: image, default: ./image1.jpg }
-      - { name: id, label: ID }
-      - { name: price, label: price, widget: number }
+      - { name: id, label: ID, type: number }
+      - { name: price, label: price, widget: number, type: number }
       - { name: description, label: description }
-      - { label: customField, name: customField, widget: object, fields: [{  name: name, label: name }, 
-        { label: values, name: values, widget: object, fields: [{name: name, label: name }, {name: priceChange, label: priceChange, widget: number }]}   ]}
       - { name: body, label: Body, widget: markdown }
 
   # - name: "pages"
