@@ -20,6 +20,7 @@ collections:
       - { name: image, label: image, default: ./image1.jpg }
       - { name: id, label: ID, widget: number, type: number }
       - { name: price, label: price, widget: number, type: number }
+      - { name: test, label: test, widget: number, type: number }
       - { name: description, label: description }
       - { name: body, label: Body, widget: markdown }
 
