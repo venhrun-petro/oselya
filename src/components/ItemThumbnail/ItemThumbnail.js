@@ -76,6 +76,7 @@ const itemThumbnail = (props) => {
                 <Heading>{props.heading}</Heading>
             </LinkStyled>
             <Price>UAH {props.price.toFixed(2)}</Price>
+            
         </ItemThumbnailStyled >
            
     )
